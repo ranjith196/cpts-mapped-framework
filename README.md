@@ -2,7 +2,7 @@
 
 **Source**: [x3m1sec CPTS Notes](https://x3m1sec.gitbook.io/notes/my-certifications/cpts/notes)
 
-Practical phase-based mapping of Hack The Box CPTS topics + deep testing prompts for authorized learning and engagements.
+Practical phase-based mapping of Hack The Box CPTS topics + deep testing prompts, mappings, and checklists for authorized learning and engagements.
 
 ---
 
@@ -14,42 +14,54 @@ cpts-mapped-framework/
 ├── METHODOLOGY.md
 ├── TOOLS.md
 ├── CHEATSHEET.md
+├── OWASP-TOP10-MAPPING.md
+├── MITRE-ATTACK-MAPPING.md
+├── BURP-EXTENSIONS.md
 ├── 01-enumeration/
-├── 02-nmap/
+├── 02-nmap/          (includes COMMANDS.md)
 ├── 03-common-apps-services/
-├── 04-web-attacks/
+├── 04-web-attacks/   (includes expanded CHECKLIST.md)
 ├── 05-active-directory/
-├── 06-privilege-escalation/
+├── 06-privilege-escalation/ (includes COMMANDS.md)
 ├── 07-shells-pivoting/
 ├── 08-password-attacks/
 ├── 09-supporting/
 └── prompts/
-    ├── README.md
-    └── xss-waf-deep.md
+    ├── master-meta.md
+    ├── xss-waf-deep.md
+    ├── idor-access-control.md
+    ├── waf-only.md
+    ├── ssrf.md
+    └── business-logic.md
 ```
 
-All phase folders now contain README + practical checklists.
+---
+
+## Key Features
+
+- Phase-based structure matching CPTS topics
+- Deep AI prompt templates for thorough testing
+- OWASP Top 10 + MITRE ATT&CK mappings
+- Burp Suite extensions recommendations
+- Phase-specific command examples
+- Expanded checklists
 
 ---
 
 ## How to Use
 
-1. Follow the numbered phases for CPTS-style work.
-2. Use original GitBook for detailed commands.
-3. Use `prompts/` for deep AI-assisted attack trees (XSS+WAF, IDOR, etc.).
-4. Expand checklists as you practice.
+1. Follow the numbered phases.
+2. Use original GitBook for detailed explanations.
+3. Use prompts for deep attack trees.
+4. Reference OWASP / MITRE when reporting.
 
 ---
 
 ## Make Private
 
-Go to the repository **Settings → General → Danger Zone → Change repository visibility** and set it to Private if you want.
+Repo → Settings → Danger Zone → Change visibility → Private
 
 ---
 
-## Credits
-
-- Original notes: **x3m1sec**
-- Framework mapping + prompts: built for your CPTS + bug bounty learning
-
-**Authorized testing only.**
+**Authorized testing only.**  
+Credits: Original notes by x3m1sec + framework built for practical use.
