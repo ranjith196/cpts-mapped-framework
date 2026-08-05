@@ -1,14 +1,23 @@
 # Detailed Prompt Templates for Deep Testing
 
-These prompts are designed for use with AI assistants during authorized testing (labs, CPTS practice, bug bounty programs with clear scope).
+These prompts are designed for use with AI assistants during **authorized** testing only (labs, CPTS practice, in-scope bug bounty).
 
-They force thorough, tree-style thinking similar to top hunters.
+They force thorough, tree-style thinking used by high-earning hunters.
 
 ## Available Prompts
-- XSS + WAF Bypass
-- IDOR / Broken Access Control
-- Exhaustive testing / "I tested everything"
-- WAF Identification & Bypass
-- Master Meta Prompt for any vulnerability class
 
-Copy the prompt, fill in the context, and use it to generate deep checklists and attack trees.
+| File | Purpose |
+|------|---------|
+| `xss-waf-deep.md` | Full XSS + WAF bypass research tree |
+| `idor-access-control.md` | Deep IDOR / Broken Access Control tree |
+| `waf-only.md` | Pure WAF identification + evasion |
+| `master-meta.md` | Universal prompt for any vulnerability class |
+
+## How to Use
+1. Copy the prompt
+2. Fill in the target context (sanitize sensitive data)
+3. Run it with your AI assistant
+4. Execute the generated tests yourself
+5. Document results
+
+More prompts (SSRF, Business Logic, Auth, etc.) can be added later.
